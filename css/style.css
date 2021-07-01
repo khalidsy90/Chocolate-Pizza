@@ -1,0 +1,45 @@
+body{
+    margin: 50px ;
+    text-align: center
+}
+/* #region nav */
+h2{
+    font-family: 'Dancing Script', cursive;
+}
+.logo
+{
+    display:grid;
+    grid-template-areas: 
+    "photoLogo titleLogo "
+    "photoLogo quotLogo"
+    ;
+    width:20%;
+}
+.logo img{
+    grid-area:photoLogo;
+}
+.logo h2{
+    grid-area:titleLogo
+}
+.logo cite{
+grid-area: quotLogo;
+}
+nav ul li{
+    padding: 9px;
+}
+.dashed
+{
+    border-top: 8px dashed #bbb;
+}
+/* #endregion nav */
+.div-list
+{
+    height: 300px;
+    background-repeat: no-repeat;
+}
+.mainsec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
