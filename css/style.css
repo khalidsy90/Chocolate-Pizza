@@ -1,8 +1,11 @@
 body{
-    margin: 50px ;
+    margin: 50px 300px ;
     text-align: center
 }
 /* #region nav */
+header{
+    margin-bottom: 60px;
+}
 h2{
     font-family: 'Dancing Script', cursive;
 }
@@ -13,7 +16,7 @@ h2{
     "photoLogo titleLogo "
     "photoLogo quotLogo"
     ;
-    width:20%;
+    width:25%;
 }
 .logo img{
     grid-area:photoLogo;
@@ -23,23 +26,77 @@ h2{
 }
 .logo cite{
 grid-area: quotLogo;
+opacity:0.8;
 }
 nav ul li{
     padding: 9px;
 }
 .dashed
 {
+    margin-top: 25px;
     border-top: 8px dashed #bbb;
 }
 /* #endregion nav */
-.div-list
-{
-    height: 300px;
-    background-repeat: no-repeat;
-}
 .mainsec{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    
+}
+.mainsec .mainsec-subcontent{
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+margin-bottom:25px;
+}
+.mainsec .titl{
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+    /* font-family: 'Noto Sans TC', sans-serif; */
+}
+.mainsec .mainsec-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.mainsec .cite{
+    opacity:0.8;
+}
+.mainsec .icone{
+   opacity:0.8;
+}
+.mainsec img{
+    margin-bottom: 20px;
+}
+.mainsec p{
+font-size:20px;
+margin-bottom:20px;
+font-family: 'Anton', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Libre Baskerville', serif;
+font-family: 'Noto Sans TC', sans-serif;
+opacity:0.6;
+text-align: left;
+line-height: 1.5;
+font-size:20px;
+}
+.div-list{
+    padding:40px;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns:auto auto
+}
+.div-list .part1{
+margin-right: 20px;
+}
+.div-list .part1 div{
+    margin-bottom: 20px;
+}
+.div-list .part2 div{
+    margin-bottom: 20px;
 }
