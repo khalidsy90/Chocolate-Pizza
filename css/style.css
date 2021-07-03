@@ -1,6 +1,8 @@
 body{
     margin: 50px 300px ;
-    text-align: center
+    text-align: center;
+    background-color:rgba(0, 0, 0, 0.9);
+    color:white
 }
 /* #region nav */
 header{
@@ -26,7 +28,6 @@ h2{
 }
 .logo cite{
 grid-area: quotLogo;
-opacity:0.8;
 }
 nav ul li{
     padding: 9px;
@@ -57,6 +58,7 @@ margin-bottom:25px;
     /* font-family: 'Noto Sans TC', sans-serif; */
 }
 .mainsec .mainsec-div{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -89,7 +91,8 @@ font-size:20px;
     background-repeat: no-repeat;
     margin-top: 30px;
     display: grid;
-    grid-template-columns:auto auto
+    grid-template-columns:auto auto;
+    color:black;
 }
 .div-list .part1{
 margin-right: 20px;
@@ -99,4 +102,37 @@ margin-right: 20px;
 }
 .div-list .part2 div{
     margin-bottom: 20px;
+}
+ div button{
+ height: 40px
+}
+footer{
+    margin-top: 40px
+}
+footer div hr{
+    border: 0.5px solid white;
+    width: 40%;
+}
+.Van .van-div{
+ 
+}
+.Van div{
+  display: grid;
+  grid-template-areas: 
+  "vanimg vanh2"
+  "vanimg vanp"
+  ;
+}
+.Van div img{
+    grid-area: vanimg;
+}
+.Van div h2{
+    grid-area: vanh2;
+    margin-bottom: 20px;
+}
+.Van div p{
+    grid-area: vanp;
+}
+cite{
+    opacity: 0.7;
 }
